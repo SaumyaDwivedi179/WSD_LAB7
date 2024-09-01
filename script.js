@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function fetchBooks() {
         loading.style.display = 'block';
         errorMessage.textContent = '';
-        fetch('books.json')
+        fetch('https://saumyadwivedi179.github.io/WSD_LAB7/books.json')
             .then(response => {
                 if (!response.ok) throw new Error('Network response was not ok.');
                 return response.json();
